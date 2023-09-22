@@ -10,9 +10,7 @@ authorLink: 'https://gitlab.com/magictree/serevrless-lambda-apigateway'
 authorName: 'agustriadji'
 -->
 
-# AWS Serverless Lambda API Gateway Prisma
-
-NodeJS function running on AWS Lambda using the traditional Serverless Framework.
+# AWS Serverless Express Prisma
 
 ## APIDOC
 
@@ -28,6 +26,16 @@ endpoints:
    │   PUT    | http://localhost:3000/Movies/{moviesId}                                 │
    │   DELETE | http://localhost:3000/Movies/{moviesId}                                 │
    │   PUT    | http://localhost:3000/chart-activate/{moviesId}                         │
+```
+
+## Set DB
+```json
+{
+"db":"mysql"
+"host":"localhost"
+"port":"3306"
+"user":"root"
+}
 ```
 
 ## Usage
