@@ -10,9 +10,7 @@ authorLink: 'https://gitlab.com/magictree/serevrless-lambda-apigateway'
 authorName: 'agustriadji'
 -->
 
-# AWS Serverless Lambda API Gateway Prisma
-
-NodeJS function running on AWS Lambda using the traditional Serverless Framework.
+# AWS Serverless Express Prisma
 
 ## APIDOC
 
