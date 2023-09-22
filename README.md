@@ -10,11 +10,11 @@ authorLink: 'https://gitlab.com/magictree/serevrless-lambda-apigateway'
 authorName: 'agustriadji'
 -->
 
-# AWS Serverless Express Prisma
+# Serverless Express Prisma
 
 ## APIDOC
 
-please refer to our [documentation](https://documenter.getpostman.com/view/559121/2s9YCBvAVG) with Postman.
+[Postman Collection](https://raw.githubusercontent.com/agustriadji/serverless-express/master/APIDOC%20for%20Serverless-prisma.postman_collection.json).
 
 ## Endpoint functions
 
