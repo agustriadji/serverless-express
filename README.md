@@ -28,6 +28,16 @@ endpoints:
    │   PUT    | http://localhost:3000/chart-activate/{moviesId}                         │
 ```
 
+## Set DB
+```json
+{
+"db":"mysql"
+"host":"localhost"
+"port":"3306"
+"user":"root"
+}
+```
+
 ## Usage
 
 run serverless-offline, host default http://localhost:3000, EX: http://localhost:3000/movie-get
