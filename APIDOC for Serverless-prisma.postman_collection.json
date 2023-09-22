@@ -1,0 +1,636 @@
+{
+	"info": {
+		"_postman_id": "fad80204-26e1-4772-a1f9-e5e1c0df4eec",
+		"name": "APIDOC for Serverless-prisma",
+		"description": "apidoc for serverless offline.\n\nHost: [http://localhost:3000](http://localhost:3000)\n\nEndpoints :\n\nGET - [http://localhost:3000/Movies/{moviesId}](http://localhost:3000/Movies/{moviesId})\n\nGET - [http://localhost:3000/Movies](http://localhost:3000/Movies)\n\nPOST - [http://localhost:3000/Movies](http://localhost:3000/Movies)\n\nPUT - [http://localhost:3000/Movies/{moviesId}](http://localhost:3000/Movies/{moviesId})\n\nPUT - [http://localhost:3000/Movies-UpdateStatus/{moviesId}](http://localhost:3000/Movies-UpdateStatus/{moviesId})\n\nDELETE - [http://localhost:3000/Movies/{moviesId}](http://localhost:3000/Movies/{moviesId})",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "559121"
+	},
+	"item": [
+		{
+			"name": "Get list movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Movies",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Movies"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "View List Movies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Movies",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Movies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "*"
+						},
+						{
+							"key": "vary",
+							"value": "origin"
+						},
+						{
+							"key": "access-control-expose-headers",
+							"value": "WWW-Authenticate,Server-Authorization"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "content-length",
+							"value": "783"
+						},
+						{
+							"key": "accept-ranges",
+							"value": "bytes"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Sep 2023 10:48:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"ok\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"title\": \"Pengabdi Setan 2 Comunion\",\n            \"description\": \"adalah sebuahh film horor indonesia tahun 2022 yang disutradarai dan ditulis oleh Joko Anwar sebagai sekuel tahun 2017, Pengabdi Setan.\",\n            \"rating\": 7,\n            \"image\": \"\",\n            \"status\": \"active\",\n            \"created_at\": \"2023-09-22T09:23:39.266Z\",\n            \"updated_at\": \"2023-09-22T09:23:39.266Z\"\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Pengabdi Setan\",\n            \"description\": \"adalah sebuahh film horor indonesia tahun 2017 yang disutradarai dan ditulis oleh Joko Anwar\",\n            \"rating\": 8,\n            \"image\": \"\",\n            \"status\": \"active\",\n            \"created_at\": \"2023-09-22T09:23:39.266Z\",\n            \"updated_at\": \"2023-09-22T09:23:39.266Z\"\n        }\n    ],\n    \"error\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "Read Movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Movies/2",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Movies",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "View Read Movies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Movies/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Movies",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "*"
+						},
+						{
+							"key": "vary",
+							"value": "origin"
+						},
+						{
+							"key": "access-control-expose-headers",
+							"value": "WWW-Authenticate,Server-Authorization"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "content-length",
+							"value": "364"
+						},
+						{
+							"key": "accept-ranges",
+							"value": "bytes"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Sep 2023 10:51:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"ok\",\n    \"data\": {\n        \"id\": 2,\n        \"title\": \"Pengabdi Setan\",\n        \"description\": \"adalah sebuahh film horor indonesia tahun 2017 yang disutradarai dan ditulis oleh Joko Anwar\",\n        \"rating\": 8,\n        \"image\": \"\",\n        \"status\": \"active\",\n        \"created_at\": \"2023-09-22T09:23:39.266Z\",\n        \"updated_at\": \"2023-09-22T09:23:39.266Z\"\n    },\n    \"error\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Movies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Forest Gump",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "this description movies",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "8.5",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"description": "path file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/Movies",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Movies"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Movies",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Forest Gump",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "this description movies",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "8.5",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/agust/Pictures/WhatsApp Image 2023-05-26 at 17.16.32.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/Movies",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Movies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "319"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"13f-ytMz48fNp9N1o74zKQ4tGfqxdwc\""
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding,origin"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Sep 2023 18:24:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"ok\",\n    \"data\": {\n        \"id\": 4,\n        \"title\": \"Forest Gump\",\n        \"description\": \"this description movies\",\n        \"rating\": 8.5,\n        \"image\": \"http:\\\\localhost:3000\\\\public\\\\movie-resources\\\\WhatsApp Image 2023-05-26 at 17.16.32.jpg\",\n        \"status\": \"active\",\n        \"created_at\": \"2023-09-22T18:24:48.062Z\",\n        \"updated_at\": \"2023-09-22T18:24:48.062Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit Movies",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Forest Gump",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "this description movies",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"description": "path file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/Movies/3",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Movies",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit Movies",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Forest Gump",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "this description movies",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/agust/Pictures/WhatsApp Image 2023-05-26 at 17.16.32.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/Movies/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Movies",
+								"3"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "328"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"148-DvNseyR9DS3tjAtaT6Om78Wzhgg\""
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding,origin"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Sep 2023 18:31:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": true,\n    \"message\": \"Data not found\",\n    \"data\": {\n        \"id\": 3,\n        \"title\": \"Forest Gump\",\n        \"description\": \"this description movies\",\n        \"rating\": 9,\n        \"image\": \"http:\\\\localhost:3000\\\\public\\\\movie-resources\\\\WhatsApp Image 2023-05-26 at 17.16.32.jpg\",\n        \"status\": \"active\",\n        \"created_at\": \"2023-09-22T18:24:48.062Z\",\n        \"updated_at\": \"2023-09-22T18:31:30.906Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Remove Movies",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/Movies/3",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Movies",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Remove Movies",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Movies/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Movies",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "319"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"13f-/OQR6CadSUDt7N7H6X7LQ9QHg8E\""
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding,origin"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Sep 2023 18:45:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"ok\",\n    \"data\": {\n        \"id\": 3,\n        \"title\": \"Forest Gump\",\n        \"description\": \"this description movies\",\n        \"rating\": 9,\n        \"image\": \"http:\\\\localhost:3000\\\\public\\\\movie-resources\\\\WhatsApp Image 2023-05-26 at 17.16.32.jpg\",\n        \"status\": \"inactive\",\n        \"created_at\": \"2023-09-22T18:24:48.062Z\",\n        \"updated_at\": \"2023-09-22T18:45:20.616Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Status Movies",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\" : \"inactive\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Movies-UpdateStatus/3",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Movies-UpdateStatus",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Status",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\" : \"inactive\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Movies-UpdateStatus/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Movies-UpdateStatus",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "319"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"13f-pXOcgCJQiRSkLx34roZuNQnR5cM\""
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding,origin"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Sep 2023 18:42:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"ok\",\n    \"data\": {\n        \"id\": 3,\n        \"title\": \"Forest Gump\",\n        \"description\": \"this description movies\",\n        \"rating\": 9,\n        \"image\": \"http:\\\\localhost:3000\\\\public\\\\movie-resources\\\\WhatsApp Image 2023-05-26 at 17.16.32.jpg\",\n        \"status\": \"inactive\",\n        \"created_at\": \"2023-09-22T18:24:48.062Z\",\n        \"updated_at\": \"2023-09-22T18:42:03.960Z\"\n    }\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
